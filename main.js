@@ -30,4 +30,4 @@ $(document).ready(function() {
     var url="https://twitter.com/intent/tweet?text=\"" + randomQuote + "\" -" + randomAuthor;
 $("#tweet").attr('href', url);
 window.open(url);});
-  });
+  });  //edo
