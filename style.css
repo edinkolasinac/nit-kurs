@@ -1,45 +1,69 @@
-@import  url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-h1 {
-  text-align: center;
-}
-body {
-  background-color: #D2691E;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight:400;
-}
-.white-box {
-  background-color: #FFFFFF;
-  color: #D2691E;
-  margin: 40px 18%;
-  padding: 5% 5% 5% 10%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight:300;
+:root {
+  --xyz-ease: cubic-bezier(.26,2.05,.84,.38);
 }
 
-.random-quote { 
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: 500;
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #466BDA;
 }
-.random-author {
-  font-size: 1.2em;
-  text-align: right;
+
+.phone {
+  background: white;
+  padding: 1.5em;
+  border-radius: 2em;
+  position: relative;
+  transform: rotateZ(-45deg);
+  box-shadow: -30px 30px 0px rgba(0,0,0,.1);
+
+  &:before {
+      content: " ";
+      position: absolute;
+      background-color: #466BDA;
+      border-radius: 1em;
+      padding: .5em;
+      width: 33%;
+      top: -5px;
+      left: 30%;
+  }
 }
-.button {
-  background-color: #D2691E;
-  color: #FFFFFF;
-  border: none;
-  float: left;
-  margin: 15px 5px auto auto;
-  padding: 5px 10px 5px 10px;
+
+.square-group {
+  display: grid;
+  grid-template-areas:
+      "square square"
+      "square square";
+
+  .square {
+      padding: 3em;
+      margin: .6em;
+      border-radius: .8em;
+      background-color: #466BDA;
+  }
 }
-.button {
-  opacity: 1;
+
+.skeleton-title, .skeleton-title2 {
+  padding: .6em;
+  margin: 1em .3em;
+  border-radius: .8em;
+  background-color:#466BDA;
 }
-.button:hover {
-  opacity: 0.75;
+.skeleton-title2 {
+  width: 60%;
 }
-.new-quote-button {
-  float: right;
+
+.circle-group {
+  display: grid;
+  grid-template-areas:
+      "circle circle circle"
+      "circle circle circle";
+
+  .square {
+      padding: 2em;
+      margin: .6em;
+      border-radius: 50%;
+      background-color: #466BDA;
+  }
 }
