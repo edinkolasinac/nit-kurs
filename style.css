@@ -27,8 +27,9 @@ body {
       width: 33%;
       top: -5px;
       left: 30%;
-  }
-}
+              
+    }
+} 
 
 .square-group {
   display: grid;
@@ -65,5 +66,9 @@ body {
       margin: .6em;
       border-radius: 50%;
       background-color: #466BDA;
+      <!--fixat izvor 6.12-->
+      <!--fixat izvor 5.13-->
+      <!--fixat izvor 5.17-->
+
   }
 }
